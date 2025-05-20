@@ -175,7 +175,6 @@
 
     async function sendOtp(event) {
       event.preventDefault();
-      const locale = document.getElementById("select-language").value;
       const channel = selectedChannel();
       let statusMessage = channel == "call" ? "☎️ calling..." : "Sending verification code...";
       showStatus(statusMessage);
